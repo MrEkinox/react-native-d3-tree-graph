@@ -30,14 +30,6 @@ var margin = {
 export default class AwesomeHierarchyGraph extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      scale: new Animated.Value(0)
-    };
-    this.animate = this.animate.bind(this);
-  }
-
-  componentDidMount() {
-    this.animate();
   }
 
   drawTree() {
@@ -54,20 +46,10 @@ export default class AwesomeHierarchyGraph extends Component {
     rectNodes = DeployNodes(nodes);
   }
 
-  animate() {
-    Animated.stagger(10, [
-      Animated.timing(this.state.scale, {
-        toValue: 1,
-        duration: 5000
-      })
-    ]).start(this.animate);
-  }
-
   render() {
     this.drawTree();
     return (
       <View>
-        <Animated.View style={{ opacity: this.state.scale }}>
           <ScrollView>
             <Svg width={width} height={height}>
               <G>
@@ -77,7 +59,6 @@ export default class AwesomeHierarchyGraph extends Component {
               </G>
             </Svg>
           </ScrollView>
-        </Animated.View>
       </View>
     );
   }
