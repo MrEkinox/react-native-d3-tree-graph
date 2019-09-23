@@ -5,11 +5,11 @@ export function kx (d) {
 }
 
 export function ky (d) {
-    return d.y - 10;
+    return d.y + 50;
 }
 
 export function tx (d) {
-    return d.x - 3;
+    return d.x;
 };
 
 export function ty (d) {

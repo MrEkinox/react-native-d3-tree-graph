@@ -10,13 +10,13 @@ export function JoinPaths(d) {
 
     linedata = [{
         x: d.target.x,
-        y: d.target.y
+        y: d.target.y + 50
     }, {
         x: d.target.x,
         y: ny
     }, {
         x: d.source.x,
-        y: d.source.y
+        y: d.source.y + 50
     }]
 
     var fun = d3.svg.line().x(function (d) {
