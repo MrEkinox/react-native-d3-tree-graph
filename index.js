@@ -33,7 +33,7 @@ export default class AwesomeHierarchyGraph extends Component {
   }
 
   drawTree() {
-    const { root, siblings } = this.props;
+    const { root, siblings, colorLine } = this.props;
 
     var allNodes = flatten(root);
 
@@ -41,7 +41,7 @@ export default class AwesomeHierarchyGraph extends Component {
       nodes = tree.nodes(root),
       links = tree.links(nodes);
 
-    curves = NodeCurves(links);
+    curves = NodeCurves(links, colorLine);
     siblingpath = SiblingCurves(siblings, allNodes);
     rectNodes = DeployNodes(nodes);
   }
