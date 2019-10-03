@@ -29,8 +29,7 @@ export function DeployNodes(nodes) {
             y={ky(n)}
             width={imageWidth}
             height={imageHeight}
-            {...n.nodeImageStyle}
-            {...n.imageUrl}
+            href={n.imageUrl}
           />
           {text}
         </G>
