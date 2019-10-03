@@ -2,9 +2,9 @@
   "name": "react-native-d3-tree-graph",
   "version": "1.0.12",
   "description": "A topological graph implementation using d3 graphs.",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -36,10 +36,16 @@
   "homepage": "https://github.com/codesinghanoop/react-native-d3-tree-graph#readme",
   "dependencies": {
     "d3": "3.5.17",
+    "lodash": "4.17.15",
     "react": "16.8.6",
     "react-native": "0.60.5",
-    "react-native-web": "^0.11.7",
     "react-native-svg": "^9.10.2",
-    "react-native-svg-web": "^1.0.1"
+    "react-native-svg-web": "^1.0.1",
+    "react-native-web": "^0.11.7"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.141",
+    "@types/react": "^16.9.4",
+    "@types/react-native": "^0.60.17"
   }
 }
