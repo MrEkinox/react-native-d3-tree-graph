@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/codesinghanoop/react-native-d3-tree-graph.git"
   },
+  "alias": {
+    "react-native": "react-native-web",
+    "react-native-svg": "react-native-svg-web"
+  },
   "keywords": [
     "graph",
     "d3",
@@ -31,6 +35,11 @@
   },
   "homepage": "https://github.com/codesinghanoop/react-native-d3-tree-graph#readme",
   "dependencies": {
-    "d3": "3.5.17"
+    "d3": "3.5.17",
+    "react": "16.8.6",
+    "react-native": "0.60.5",
+    "react-native-web": "^0.11.7",
+    "react-native-svg": "^9.10.2",
+    "react-native-svg-web": "^1.0.1"
   }
 }
